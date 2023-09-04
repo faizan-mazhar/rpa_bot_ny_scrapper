@@ -118,3 +118,5 @@ For example, a workitem to filter news for `Crypto` for current month and `Arts`
 ```
 
 For instruction on how to setup workitems on Robocorp, please follow this link: [Robocorp workitems](https://youtu.be/XczuMYkCvRE)
+
+Also, setup environment variable `ENV` for the process. Value of `ENV` variable should be `PROD`
