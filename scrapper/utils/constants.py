@@ -54,7 +54,6 @@ if env == 'PROD':
     work_item = work_items.get_work_item_variables()
     search_phrase = work_item.get("search_phrase", "")
     sections = work_item.get("sections")
-    sections = eval(sections)
     number_of_month = work_item.get("number_of_months", 0)
 else:
     search_phrase = 'python'
