@@ -1,3 +1,4 @@
+from datetime import timedelta
 from RPA.Browser.Selenium import Selenium
 
 
@@ -66,7 +67,7 @@ class BrowserClient:
         self.browser_driver.click_button(kwargs.get("target"))
     
     def __wait(self, **kwargs):
-        self.browser_driver.wait_until_page_contains_element(kwargs.get("target"))
+        self.browser_driver.wait_until_page_contains_element(kwargs.get("target"), timeout=timedelta(seconds=60))
 
     def __insert_text(self, **kwargs):
         self.browser_driver.input_text(kwargs.get("target"), kwargs.get("input_text"))
