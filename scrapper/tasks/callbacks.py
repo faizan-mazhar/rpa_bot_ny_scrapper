@@ -88,7 +88,7 @@ def extract_news_callback(parent_element, offset):
                 "Date": news_date,
                 "Description": news_description_text,
                 "Picture filename": image_file_name,
-                "Search phrases count": news_title.count(search_phrase),
+                "Search phrases count": news_title.lower().count(search_phrase),
                 "Currency in title or description": has_currency_mention,
             }
         )
